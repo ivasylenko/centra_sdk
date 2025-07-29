@@ -9,30 +9,30 @@ from uuid import UUID
 
 from pydantic import conint
 
-from ..models.connector.v1.common.inventory import InventoryItem
-from ..models.connector.v1.consumer.agents import AgentsInfo
-from ..models.connector.v1.consumer.enforcement import (
+from .models.connector.v1.common.inventory import InventoryItem
+from .models.connector.v1.consumer.agents import AgentsInfo
+from .models.connector.v1.consumer.enforcement import (
     Action,
     EnforcementPolicy,
     EnforcementPolicyInventory,
 )
-from ..models.connector.v1.operations.config import (
+from .models.connector.v1.operations.config import (
     InternalConfig,
     InternalConfigMetadata,
 )
-from ..models.connector.v1.operations.health import (
+from .models.connector.v1.operations.health import (
     V1OperationsFlagsGetResponse,
     V1OperationsHealthGetResponse,
     V1OperationsMetricsGetResponse,
 )
-from ..models.connector.v1.operations.info import EnvUnits, IntegrationEnvInfo
-from ..models.connector.v1.operations.log import LogStart, LogStatus
-from ..models.connector.v1.operations.onboard import (
+from .models.connector.v1.operations.info import EnvUnits, IntegrationEnvInfo
+from .models.connector.v1.operations.log import LogStart, LogStatus
+from .models.connector.v1.operations.onboard import (
     Onboard,
     StatusRequest,
     StatusResponse,
 )
-from ..models.connector.v1.provider.inventory import (
+from .models.connector.v1.provider.inventory import (
     Inventory,
     InventoryAssetType,
     InventoryReporterType,
@@ -41,5 +41,5 @@ from ..models.connector.v1.provider.inventory import (
     V1ProviderInventoryIdAssetsAssetTypePostResponse,
     V1ProviderInventoryIdAssetsAssetTypePostResponse1,
 )
-from ..models.connector.v1.provider.lookup import LookupRequest
-from ..models.connector.version import VersionHandshakeData
+from .models.connector.v1.provider.lookup import LookupRequest
+from .models.connector.version import VersionHandshakeData
