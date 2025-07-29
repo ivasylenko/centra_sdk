@@ -21,7 +21,7 @@ routers["operations"] = operations.router
 
 
 def init_routers(custom_routers):
-    for tag, router in routers:
+    for tag, router in routers.items():
         if tag in custom_routers:
             print(f'use customer router for: {tag}')
             app.include_router(custom_routers[tag])
